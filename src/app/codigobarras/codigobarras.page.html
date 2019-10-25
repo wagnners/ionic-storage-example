@@ -1,0 +1,25 @@
+<ion-header>
+  <ion-toolbar>
+      <ion-buttons slot="start">
+          <ion-menu-button></ion-menu-button>
+        </ion-buttons>
+    <ion-title>Leitor de Código de Barras</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <h1>Clique no botão para escanear</h1>
+  <ion-button (click)="scanCode()">
+    Escanear
+  </ion-button>
+
+  <div *ngIf="scannedData">
+      <p>
+        Texto Escaneado: <b>{{ scannedData["text"] }}</b>
+      </p>
+      <p>
+        Formato: <b>{{ scannedData["format"] }}</b>
+      </p>
+  </div>
+
+</ion-content>

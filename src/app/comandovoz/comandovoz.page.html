@@ -1,0 +1,20 @@
+<ion-header>
+  <ion-toolbar>
+      <ion-buttons slot="start">
+          <ion-menu-button></ion-menu-button>
+        </ion-buttons>
+    <ion-title>Comando de Voz </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <ion-list>
+    <ion-item>
+      <ion-label> Texto a ser falado </ion-label>
+      <ion-input type="text" [(ngModel)]="textoaserfalado"></ion-input>
+    </ion-item>
+  </ion-list>
+
+   <ion-button color="dark" (click)="falar()"> Falar </ion-button>
+</ion-content>
