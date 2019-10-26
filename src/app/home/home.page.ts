@@ -9,10 +9,10 @@ import { InAppBrowser } from '@ionic-native/in-app-browser/ngx';
 export class HomePage {
 
 
-constructor() {}
+constructor(private iab: InAppBrowser) {}
 
   openWebpage(url: string) {
-    window.open(url);
+    const browser = this.iab.create(url);
   }
 
 }

@@ -11,7 +11,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { Camera } from '@ionic-native/camera/ngx';
 import { TextToSpeech } from '@ionic-native/text-to-speech/ngx';
 import { BarcodeScanner } from '@ionic-native/barcode-scanner/ngx';
-
+import { InAppBrowser } from '@ionic-native/in-app-browser/ngx';
 @NgModule({
   declarations: [AppComponent],
   entryComponents: [],
@@ -26,6 +26,7 @@ import { BarcodeScanner } from '@ionic-native/barcode-scanner/ngx';
     Camera,
     TextToSpeech,
     BarcodeScanner,
+    InAppBrowser,
     { provide: RouteReuseStrategy, useClass: IonicRouteStrategy }
   ],
   bootstrap: [AppComponent]
