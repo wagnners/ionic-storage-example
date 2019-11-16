@@ -8,6 +8,7 @@ import { InAppBrowser } from '@ionic-native/in-app-browser/ngx';
 })
 export class HomePage {
 
+cliente: any = {};
 
 constructor(private iab: InAppBrowser) {}
 
